@@ -7,7 +7,8 @@ const Header = () => {
   return (
     <StyledHeader>
       <div>
-        <h1>I’m Rayan Adlrdard Front-end Developer </h1>
+        <h2>I’m Rayan Adlrdard</h2>
+        <h1>Front-end Developer </h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur,
           dolor, enim! Alias illum odit velit.
