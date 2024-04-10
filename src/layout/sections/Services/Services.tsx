@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import { v4 as uuidv4 } from "uuid";
 import SectionHeader from "../../../components/SectionHeader/SectionHeader";
 import ServiceCard from "./ServiceCard/ServiceCard";
 import servicesData from "./servicesData";
 
 const Services = () => {
   return (
-    <div>
+    <StyledServices>
       <SectionHeader title="My Services">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
         necessitatibus odio pariatur quas quibusdam voluptatem.
@@ -14,7 +15,7 @@ const Services = () => {
       <ServicesCardsContainer>
         {servicesData.map(({ iconName, title, description }) => {
           return (
-            <li key={title + iconName}>
+            <li key={uuidv4()}>
               <ServiceCard iconName={iconName} title={title}>
                 {description}
               </ServiceCard>
@@ -22,11 +23,13 @@ const Services = () => {
           );
         })}
       </ServicesCardsContainer>
-    </div>
+    </StyledServices>
   );
 };
 
 export default Services;
+
+const StyledServices = styled.section``;
 
 const ServicesCardsContainer = styled.ul`
   display: flex;

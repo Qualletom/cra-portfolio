@@ -20,12 +20,12 @@ const Icon = ({ name, width, height }: IconPropsType) => {
 
 export default Icon;
 
-type StuledIconPropsType = {
+type StyledIconPropsType = {
   width?: number;
   height?: number;
 };
 
-const StyledIcon = styled.div<StuledIconPropsType>`
+const StyledIcon = styled.div<StyledIconPropsType>`
   width: ${(props) => `${props.width || 18}px`};
   height: ${(props) => `${props.height || 18}px`};
 

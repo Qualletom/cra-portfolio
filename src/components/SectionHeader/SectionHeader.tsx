@@ -3,13 +3,13 @@ import styled from "styled-components";
 
 type SectionHeaderPropsType = {
   title: string;
-  children: string;
+  children?: string;
 };
 const SectionHeader = ({ title, children }: SectionHeaderPropsType) => {
   return (
     <StyledSectionHeader>
       <Title>{title}</Title>
-      <Description>{children}</Description>
+      {children && <Description>{children}</Description>}
     </StyledSectionHeader>
   );
 };

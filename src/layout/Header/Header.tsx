@@ -1,11 +1,11 @@
 import React from "react";
-import styled from "styled-components";
 import Icon from "../../components/Icon/Icon";
 import developerPhoto from "../../assets/images/developerPhoto.jpg";
+import { SC } from "./Header_Styles";
 
 const Header = () => {
   return (
-    <StyledHeader>
+    <SC.Header>
       <div>
         <h2>I’m Rayan Adlrdard</h2>
         <h1>Front-end Developer </h1>
@@ -19,15 +19,8 @@ const Header = () => {
         </button>
       </div>
       <img src={developerPhoto} alt="developer" />
-    </StyledHeader>
+    </SC.Header>
   );
 };
 
 export default Header;
-
-const StyledHeader = styled.header`
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;

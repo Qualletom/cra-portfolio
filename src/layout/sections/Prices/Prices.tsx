@@ -6,7 +6,7 @@ import pricesData from "./pricesData";
 
 const Prices = () => {
   return (
-    <div>
+    <StyledPrices>
       <SectionHeader title="Price plans">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. lorem ipsum
@@ -20,11 +20,13 @@ const Prices = () => {
           );
         })}
       </ServicesCardsContainer>
-    </div>
+    </StyledPrices>
   );
 };
 
 export default Prices;
+
+const StyledPrices = styled.section``;
 
 const ServicesCardsContainer = styled.ul`
   display: flex;
